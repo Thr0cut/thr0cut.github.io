@@ -66,8 +66,6 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://"
       
-footer:
-
 defaults:
   # _posts
   - scope:
