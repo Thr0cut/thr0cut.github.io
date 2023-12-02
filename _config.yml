@@ -64,7 +64,7 @@ author:
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "HackTheBox Profile"
-      icon: "fas fa-fw fa-link"
+      icon: "fa-solid fa-box"
       url: "https://app.hackthebox.com/profile/1167918"
 
 defaults:
