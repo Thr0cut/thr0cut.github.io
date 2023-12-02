@@ -64,7 +64,7 @@ author:
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "HackTheBox Profile"
-      icon: "<iconify-icon icon="simple-icons:hackthebox" style="color: #00fe00;"></iconify-icon>"
+      icon: "hackthebox.png"
       url: "https://app.hackthebox.com/profile/1167918"
 
 defaults:
