@@ -1,8 +1,9 @@
 ---
-permalink: /about/
+permalink: /About/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+"Infiltrator's Hideout" is an Offensive Security blog that was created as a platform for publishing personal works related to Cybersecurity domain as well as sharing knowledge and passion with my fellow Hackermen (which is a way of giving back to the community I have absorbed incredible knowledge from). Initially, among my publications you will be able to find my modest researches as well as CTF walkthroughs. As my hacking powers grow, the quality of publications will improve. If any of them catch your interest, feel free to submit your feedback or questions in the comments (as soon as I manage to enable comments on "super customizable" Jekyll) or, in case you've truly enjoyed it, you can leave me a "respect" on my HackTheBox profile.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+Happy Hacking!
+Thr0cut

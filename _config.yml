@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Thr0cut"
   avatar : "/docs/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Offensive Security Ethusiast. Hackerman."
   links:
     - label: "HackTheBox Profile"
       icon: "fas fa-fw fa-link"
