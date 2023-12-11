@@ -63,7 +63,7 @@ plugins:
 author:
   name   : "Thr0cut"
   avatar : "/docs/assets/images/bio-photo.jpg"
-  bio    : "Unexpected Guest"
+  bio    : "Unexpected guest."
   links:
     - label: "HackTheBox Profile"
       icon: "fas fa-fw fa-link"
