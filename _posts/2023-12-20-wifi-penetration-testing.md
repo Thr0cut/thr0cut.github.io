@@ -1,14 +1,16 @@
 ---
 title: "Wi-Fi Penetration Testing: Attacks Against WPA2 & WPA3"
 classes: wide
+author_profile: false
+share: false
 tags:
   - wireless_networks
   - wifi
 categories:
   - research
 toc: true
-toc_label: "Table of Contents"
 toc_sticky: true
+toc_label: "Table of Contents"
 ---
 
 ## Description
