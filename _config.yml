@@ -61,7 +61,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Thr0cut"
+  name   : "  Thr0cut"
   avatar : "/docs/assets/images/bio-photo.jpg"
   bio    : "The Unexpected Guest."
   links:
