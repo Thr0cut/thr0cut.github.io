@@ -1,7 +1,7 @@
 ---
 title: "Wi-Fi Penetration Testing: Attacks Against WPA2 & WPA3"
 excerpt: "A comprehensive secondary research dedicated to Wi-Fi security assessment."
-author_profile: false
+author_profile: true
 share: false
 tags:
   - wireless_networks
@@ -214,6 +214,7 @@ reaver -i <interface> -b <mac> -vv <PIN>
 ```
 
 ### WPA2-PSK: PMKID Dump
+
 
 PMK Caching and PMKID
 {: style="text-align: center;"}
