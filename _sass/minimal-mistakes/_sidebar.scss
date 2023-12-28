@@ -165,6 +165,7 @@
 }
 
 .author__name {
+  vertical-align: center;
   margin: 0;
 
   @include breakpoint($large) {
@@ -350,4 +351,3 @@
     margin-right: initial;
   }
 }
-
