@@ -1,6 +1,6 @@
 ---
 title: "Wi-Fi Penetration Testing: Attacks Against WPA2 & WPA3"
-classes: wide
+excerpt: "A comprehensive secondary research dedicated to Wi-Fi security assessment."
 author_profile: false
 share: false
 tags:
@@ -15,7 +15,7 @@ toc_label: "Table of Contents"
 
 ## Description
 
-This article/research is a collection of information gathered from the author's lab exercises as well as external sources (which will be listed in the "Resources" section) dedicated to attacks against WPA2 & WPA3 protocols as well as the general methodology on how to conduct Wi-Fi Penetration Testing. The article will be maintained and updated.
+This secondary research is a collection of theoretical and practical materials gathered from various external sources (which will be listed in the "Resources" section) as well as the author's lab exercises. It is dedicated to attacks against WPA2 & WPA3 protocols as well as the general methodology of conducting Wi-Fi Penetration Testing. The article will be maintained and updated.
 
 ## Research Objective
 
@@ -313,7 +313,6 @@ The attack consists of creating a rogue access point mimicking the targeted ESSI
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/evil-twin-creation.png" alt="">
   <figcaption>Result of the commands above.</figcaption>
 </figure>
-
 4. Capture RADIUS credentials (challenge / response)
 
 Provided you can overpower the signal strength of the target access point (or due to DoS), clients will begin to disconnect from the target network and connect to your access point. Unless the affected client devices are configured to reject invalid certificates, the victims of the attack will be presented with a message similar to the one below:
@@ -383,33 +382,24 @@ The attack is based on **Evil Twin** technique. If a client is connected to a wi
 **Attack demonstration:**
 
 1. Configure a Wireless Access Point to use WPA3-Personal with WPA3-Transition feature (backwards compatibility)
-
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-downgrade-confirm.png" alt="">
   <figcaption>Creating an AP with required config and confirming with Airmon-ng.</figcaption>
 </figure>
-
 2. Wait for a client to connect
-
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-client-connected.png" alt="">
 </figure>
-
-3. Start a rogue AP with hostapd with the following cfg file
-
+3. Start a rogue AP with hostapd with the following configuration file
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-rogue-ap.png" alt="">
   <figcaption>Creating a rogue AP with hostapd and verifying with airodump-ng.</figcaption>
 </figure>
-
 4. De-authenticate a client and capture WPA2-handshake
-
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-handshake.png" alt="">
 </figure>
-
 5. Crack the handshake
-
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-cracked.png" alt="">
   <figcaption>Password cracked with aircrack-ng.</figcaption>
@@ -420,7 +410,7 @@ The attack is based on **Evil Twin** technique. If a client is connected to a wi
 For wireless attacks reviewed in this research, the following mitigation recommendations are available:
 
 
-1. Use the latest version of WPA (**WPA3**);
+1. Use the latest version of Wi-Fi Protected Access security protocol (**WPA3**);
 
 2. Regularly **update firmware** on routers/APs and network clients;
 
@@ -432,7 +422,7 @@ For wireless attacks reviewed in this research, the following mitigation recomme
 
 ## Conclusions
 
-Over the course of this research Wi-Fi security concepts and common attacks against Wi-Fi networks were analyzed. I was able to build the knowledgebase and practical skills necessary to conduct wireless security assessments
+Over the course of this research, Wi-Fi security concepts and common attacks against Wi-Fi networks were analyzed. The presented materials should enable the reader to build the knowledgebase and practical skills necessary to conduct wireless security assessments.
 Wi-Fi networks are a dangerous attack surface that can provide an adversary with a solid foothold in an organization’s infrastructure, yet wireless security is often neglected by business owners (and by people overall). As we conduct penetration tests, it is our responsibility to highlight the importance of this topic as well as educate our clients on implementing the best security practices in order to mitigate wireless attacks and improve the overall defense of their infrastructure.
 
 ## Resources
@@ -446,14 +436,14 @@ Wi-Fi networks are a dangerous attack surface that can provide an adversary with
 
 **Articles:**
 
-* Wi-Fi Pentesting Guide - https://github.com/ricardojoserf/wifi-pentesting-guide
-* Pentesting Wi-Fi (Hacktricks) - https://book.hacktricks.xyz/generic-methodologies-and-resources/pentesting-wifi
-* Wireless Penetration Testing: PMKID Attack -  https://www.hackingarticles.in/wireless-penetration-testing-pmkid-attack/
-* DRAGONBLOOD - Analysing WPA3's Dragonfly Handshake (Mathy Vanhoef) - https://wpa3.mathyvanhoef.com/#intro
-* WPA3 Downgrade Attack - http://www.netprojnetworks.com/wpa3-downgrade-attack/
+* Wi-Fi Pentesting Guide - [link](https://github.com/ricardojoserf/wifi-pentesting-guide)
+* Pentesting Wi-Fi (Hacktricks) - [link](https://book.hacktricks.xyz/generic-methodologies-and-resources/pentesting-wifi)
+* Wireless Penetration Testing: PMKID Attack -  [link](https://www.hackingarticles.in/wireless-penetration-testing-pmkid-attack/)
+* DRAGONBLOOD - Analysing WPA3's Dragonfly Handshake (Mathy Vanhoef) - [link](https://wpa3.mathyvanhoef.com/#intro)
+* WPA3 Downgrade Attack - [link](http://www.netprojnetworks.com/wpa3-downgrade-attack/)
 
 **Presentations:**
-* Attacking WPA3: New Vulnerabilities and Exploit Framework (Mathy Vanhoef) - https://conference.hitb.org/hitbsecconf2022sin/materials/D1T1%20-%20Attacking%20WPA3%20-%20New%20Vulnerabilities%20and%20Exploit%20Framework%20-%20Mathy%20Vanhoef.pdf
+* Attacking WPA3: New Vulnerabilities and Exploit Framework (Mathy Vanhoef) - [link](https://conference.hitb.org/hitbsecconf2022sin/materials/D1T1%20-%20Attacking%20WPA3%20-%20New%20Vulnerabilities%20and%20Exploit%20Framework%20-%20Mathy%20Vanhoef.pdf)
 
 
 
