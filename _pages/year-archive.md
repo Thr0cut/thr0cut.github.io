@@ -1,6 +1,6 @@
 ---
 title: "Publications by Year"
 permalink: /publications/
-layout: publications
+layout: posts
 author_profile: true
 ---
