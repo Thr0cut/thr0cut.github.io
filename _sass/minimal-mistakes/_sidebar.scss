@@ -165,8 +165,7 @@
 }
 
 .author__name {
-  vertical-align: center;
-  margin: 0;
+  margin: 10px;
 
   @include breakpoint($large) {
     margin-top: 10px;
