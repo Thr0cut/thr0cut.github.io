@@ -72,14 +72,14 @@
 }
 
 .sidebar__right {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 
   @include breakpoint($large) {
     position: absolute;
     top: 0;
     right: 0;
     width: $right-sidebar-width-narrow;
-    margin-right: -1 * $right-sidebar-width-narrow;
+    margin-right: 2 * $right-sidebar-width-narrow;
     padding-left: 1em;
     z-index: 10;
 
@@ -123,7 +123,7 @@
 
 .author__avatar {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: top-center;
   width: 54px;
   height: 54px;
 
