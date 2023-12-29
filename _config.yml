@@ -61,12 +61,15 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "  Thr0cut"
+  name   : "Thr0cut"
   avatar : "/docs/assets/images/bio-photo.jpg"
-  bio    : "The Unexpected Guest."
+  bio    : "The unexpected guest"
   links:
     - label: "HackTheBox Profile"
       icon: "fas fa-fw fa-link"
+      url: "https://app.hackthebox.com/profile/1167918"
+    - label: "Discord"
+      icon: "fab fa-discord"
       url: "https://app.hackthebox.com/profile/1167918"
 
 defaults:
