@@ -66,7 +66,7 @@ author:
   bio    : "The unexpected guest"
   links:
     - label: "HackTheBox Profile"
-      icon: "fas fa-fw fa-link"
+      icon: "far fa-cube"
       url: "https://app.hackthebox.com/profile/1167918"
     - label: "Discord"
       icon: "fab fa-discord"
