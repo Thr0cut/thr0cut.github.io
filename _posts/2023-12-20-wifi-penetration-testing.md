@@ -200,12 +200,12 @@ reaver -i <interface> -b <mac> -vv
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/reaverwpsbruteforce.png" alt="">
-  <figcaption>Handshake cracked successfully.</figcaption>
+  <figcaption>Executing WPS bruteforce attack with Reaver.</figcaption>
 </figure>
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/reaverwpscrackresult.png" alt="">
-  <figcaption>Handshake cracked successfully.</figcaption>
+  <figcaption>WPS PIN cracked successfully.</figcaption>
 </figure>
 
 ```bash
