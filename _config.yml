@@ -65,8 +65,8 @@ author:
   avatar : "/docs/assets/images/bio-photo.jpg"
   bio    : "The unexpected guest"
   links:
-    - label: "HackTheBox Profile"
-      icon: "far fa-cube"
+    - label: "HackTheBox"
+      icon: "fa-regular fa-cube"
       url: "https://app.hackthebox.com/profile/1167918"
     - label: "Discord"
       icon: "fab fa-discord"
