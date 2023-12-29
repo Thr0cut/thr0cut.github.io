@@ -87,8 +87,8 @@
       @include clearfix();
       position: -webkit-sticky;
       position: sticky;
-      top: 0em;
-      float: top-left;
+      top: 2em;
+      float: right;
 
       .toc {
         .toc__menu {
