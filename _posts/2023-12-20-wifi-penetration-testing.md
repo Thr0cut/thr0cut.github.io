@@ -35,7 +35,7 @@ Wireless security is the prevention of unauthorized access or damage to computer
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/DifferencesTable.png" alt="">
-  <figcaption>Differences table.</figcaption>
+  <figcaption>Wi-FI Security Protocols differences table.</figcaption>
 </figure>
 
 
@@ -123,6 +123,7 @@ WPA-PSK passphrase supplied by the user, along with the SSID, is sent through Pa
 airmon-ng check kill && airmon-ng start wlan0
 #=> kill interfering processes and enable monitor mode on the specified wireless interface
 ```
+{:start="2"}
 2. Identify the target:
 
 ```bash
@@ -134,6 +135,7 @@ wash -i wlan0
   <figcaption>Available targets.</figcaption>
 </figure>
 
+{:start="3"}
 3. Start capturing traffic for the target network
 
 ```bash
@@ -145,6 +147,7 @@ airodump-ng –c 1 –bssid [AP MAC] –w capture wlan0
   <figcaption>Traffic capture identified clients connected to our target network.</figcaption>
 </figure>
 
+{:start="4"}
 4. De-authenticate / wait for a client to connect to capture a handshake
 
 ```bash
@@ -157,6 +160,7 @@ aireplay-ng -0 1 -a [AP MAC] -v [CLIENT MAC] wlan0
   <figcaption>Executing de-authentication attack.</figcaption>
 </figure>
 
+{:start="5"}
 5. Crack the handshake
 
 If we succeed with de-authenticating a client, it will attempt to reconnect, which should enable us to capture the handshake (aireplay-ng would notify us of handshake capture by outputting "WPA handshake: [AP MAC]"). The following command was used to bruteforce the network’s password with a dictionary:
@@ -216,8 +220,7 @@ reaver -i <interface> -b <mac> -vv <PIN>
 ### WPA2-PSK: PMKID Dump
 
 
-PMK Caching and PMKID
-{: style="text-align: center;"}
+**PMK Caching and PMKID**
 
 **Access Point roaming** refers to a scenario where a client or a supplicant moves outside the range of an AP and/or connects to another AP. Very similar to handoffs in cellular networks, this roaming can often take a toll on connectivity given every time a client moves out from the range of an AP and moves to other, 4-way handshake will be done again. To make this handoff lag-free, we have a feature called **PMK caching**. Many routers cache **PMKID** so that the next time client re-authenticates without the handshake. Routers with this feature enabled advertise PMKID in the **EAPOL** frame. An attacker can dump it and perform a bruteforce attack against it to guess the **PMK** required to authenticate in the network.
 
@@ -243,6 +246,7 @@ hcxdumptool –o <filename> <interface> --enable_status=1 –filterlist_ap=<file
   <figcaption>Dump PMKID from target AP.</figcaption>
 </figure>
 
+{:start="4"}
 4. Crack PMKID (**hcxpcaptool**, **Hashcat**)
 
 ```bash
@@ -314,6 +318,8 @@ The attack consists of creating a rogue access point mimicking the targeted ESSI
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/evil-twin-creation.png" alt="">
   <figcaption>Result of the commands above.</figcaption>
 </figure>
+
+{:start="4"}
 4. Capture RADIUS credentials (challenge / response)
 
 Provided you can overpower the signal strength of the target access point (or due to DoS), clients will begin to disconnect from the target network and connect to your access point. Unless the affected client devices are configured to reject invalid certificates, the victims of the attack will be presented with a message similar to the one below:
@@ -322,6 +328,7 @@ Provided you can overpower the signal strength of the target access point (or du
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/evil-twin-certificate.png" alt="">
 </figure>
 
+{:start="5"}
 5. Crack received credentials (**asleap**)
 
 Fortunately, it’s usually possible to find at least one enterprise employee who will blindly accept your certificate. It’s also common to encounter devices that are configured to accept invalid certificates automatically. In either case, you’ll soon see usernames, challenges, and responses shown in your terminal as shown below:
