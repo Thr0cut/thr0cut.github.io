@@ -24,6 +24,9 @@ github_username: username
 minimal_mistakes_skin: dark
 minimal_mistakes_skin2: default
 search: true
+search_provider: lunr
+lunr:
+  search_within_pages: true
 
 # Build settings
 markdown: kramdown
@@ -35,6 +38,7 @@ paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 algolia:
   powered_by: false
+
 
 
 include:
@@ -53,6 +57,7 @@ include:
 #   - vendor/ruby/
 
 # Plugins (previously gems:)
+url: "https://thr0cut.github.io"
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -60,6 +65,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-algolia
 
 author:
   name   : "Thr0cut"
