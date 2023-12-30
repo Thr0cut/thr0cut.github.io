@@ -28,6 +28,7 @@ search: true
 search_provider: lunr
 lunr:
   search_within_pages: true
+  search_within_posts: true
 
 # Build settings
 markdown: kramdown

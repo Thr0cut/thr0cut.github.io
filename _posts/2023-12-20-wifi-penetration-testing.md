@@ -383,28 +383,37 @@ The attack is based on **Evil Twin** technique. If a client is connected to a wi
 **Attack demonstration:**
 
 1. Configure a Wireless Access Point to use WPA3-Personal with WPA3-Transition feature (backwards compatibility)
+
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-downgrade-confirm.png" alt="">
   <figcaption>Creating an AP with required config and confirming with Airmon-ng.</figcaption>
 </figure>
+
 {:start="2"}
 2. Wait for a client to connect
+
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-client-connected.png" alt="">
 </figure>
+
 {:start="3"}
 3. Start a rogue AP with hostapd with the following configuration file
+
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-rogue-ap.png" alt="">
   <figcaption>Creating a rogue AP with hostapd and verifying with airodump-ng.</figcaption>
 </figure>
+
 {:start="4"}
 4. De-authenticate a client and capture WPA2-handshake
+
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-handshake.png" alt="">
 </figure>
+
 {:start="5"}
 5. Crack the handshake
+
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-cracked.png" alt="">
   <figcaption>Password cracked with aircrack-ng.</figcaption>
