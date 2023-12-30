@@ -123,6 +123,7 @@ WPA-PSK passphrase supplied by the user, along with the SSID, is sent through Pa
 airmon-ng check kill && airmon-ng start wlan0
 #=> kill interfering processes and enable monitor mode on the specified wireless interface
 ```
+
 {:start="2"}
 2. Identify the target:
 
