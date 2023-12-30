@@ -220,7 +220,8 @@ reaver -i <interface> -b <mac> -vv <PIN>
 
 ### WPA2-PSK: PMKID Dump
 
-
+\
+\
 **PMK Caching and PMKID**
 
 **Access Point roaming** refers to a scenario where a client or a supplicant moves outside the range of an AP and/or connects to another AP. Very similar to handoffs in cellular networks, this roaming can often take a toll on connectivity given every time a client moves out from the range of an AP and moves to other, 4-way handshake will be done again. To make this handoff lag-free, we have a feature called **PMK caching**. Many routers cache **PMKID** so that the next time client re-authenticates without the handshake. Routers with this feature enabled advertise PMKID in the **EAPOL** frame. An attacker can dump it and perform a bruteforce attack against it to guess the **PMK** required to authenticate in the network.
