@@ -23,6 +23,7 @@ twitter_username: username
 github_username: username
 minimal_mistakes_skin: dark
 minimal_mistakes_skin2: default
+words_per_minute: 150
 search: true
 search_provider: lunr
 lunr:
