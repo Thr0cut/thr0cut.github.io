@@ -66,6 +66,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-algolia
   - jekyll-seo-tag
+  - jekyll-linkpreview
 
 author:
   name   : "Thr0cut"
