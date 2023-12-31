@@ -1,6 +1,8 @@
 ---
-title: "Wi-Fi Penetration Testing: Attacks Against WPA2 & WPA3"
+title: "Wi-Fi Penetration Testing: Attacks Against WPA2/3"
 excerpt: "A comprehensive secondary research dedicated to Wi-Fi security assessment."
+header:
+  teaser: /assets/images/teasers/wifi-penetration-testing-teaser.png
 author_profile: true
 share: false
 tags:
