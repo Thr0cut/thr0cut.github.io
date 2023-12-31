@@ -376,7 +376,7 @@ Since WPA-Enterprise credentials are often Domain User credentials, use the disc
 
 In January 2018, the Wi-Fi Alliance announced WPA3 as a replacement to WPA2. The new standard uses 128-bit encryption in WPA3-Personal mode (WPA-SAE, pre-shared key) or 192-bit in WPA3 – Enterprise (RADIUS authentication server).
 
-WPA3 is much harder to attack because of its modern key establishment protocol called “Simultaneous Authentication of Equals” (**SAE**) or the **Dragonfly** Key Exchange. SAE improves security of the initial key exchange and offers better protection against offline dictionary-based attacks. Other notable security features of WPA3 include **Management Frame Protection** or MFP (encrypts management frames and prevents unauthorized communication from external sources), **Perfect Forward Secrecy** (new session keys are generated continuously, preventing decryption of previous communications) and DPP (**Device Provisioning Protocol**, a replacement to WPS) which enables new devices to connect using QR codes)
+WPA3 is much harder to attack because of its modern key establishment protocol called “Simultaneous Authentication of Equals” (**SAE**) or the **Dragonfly** Key Exchange. SAE improves security of the initial key exchange and offers better protection against offline dictionary-based attacks. Other notable security features of WPA3 include **Management Frame Protection** or MFP (encrypts management frames and prevents unauthorized communication from external sources), **Perfect Forward Secrecy** (new session keys are generated continuously, preventing decryption of previous communications) and DPP (**Device Provisioning Protocol**, a replacement to WPS) which enables new devices to connect using QR codes.
 
 **WPA3 Flaws**
 

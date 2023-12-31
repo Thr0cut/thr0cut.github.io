@@ -25,6 +25,9 @@ minimal_mistakes_skin: dark
 minimal_mistakes_skin2: default
 words_per_minute: 100
 search: true
+search_provider: lunr
+lunr:
+  search_within_pages: true
 
 # Build settings
 markdown: kramdown
