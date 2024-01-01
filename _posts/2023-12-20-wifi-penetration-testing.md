@@ -468,7 +468,7 @@ Wi-Fi networks are a dangerous attack surface that can provide an adversary with
 * WPA3 Downgrade Attack - [http://www.netprojnetworks.com/wpa3-downgrade-attack/](http://www.netprojnetworks.com/wpa3-downgrade-attack/)
 
 **Presentations:**
-* Attacking WPA3: New Vulnerabilities and Exploit Framework (Mathy Vanhoef) - [https://conference.hitb.org/hitbsecconf2022sin/materials/D1T1%20-%20Attacking%20WPA3%20-%20New%20Vulnerabilities%20and%20Exploit%20Framework%20-%20Mathy%20Vanhoef.pdf](https://conference.hitb.org/hitbsecconf2022sin/materials/D1T1%20-%20Attacking%20WPA3%20-%20New%20Vulnerabilities%20and%20Exploit%20Framework%20-%20Mathy%20Vanhoef.pdf)
+* Attacking WPA3: New Vulnerabilities and Exploit Framework (Mathy Vanhoef) - [https://conference.hitb.org/hitbsecconf2022sin/materials/D1T1%20-%20Attacking%20WPA3%20-%20New%20Vulnerabilities%20and%20Exploit%20Framework%20-%20Mathy%20Vanhoef.pdf](link)
 
 
 
