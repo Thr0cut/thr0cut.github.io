@@ -1,5 +1,5 @@
 ---
-title: "Wi-Fi Penetration Testing: Attacks Against WPA2/3"
+title: "Wi-Fi Penetration Testing: WPA2/3 Attack Methodology"
 excerpt: "A comprehensive secondary research dedicated to Wi-Fi security assessment."
 header:
   teaser: /assets/images/wifi-penetration-testing-teaser.png
