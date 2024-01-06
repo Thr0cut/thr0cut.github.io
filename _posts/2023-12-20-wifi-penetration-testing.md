@@ -56,9 +56,9 @@ On this stage, we need to understand the following:
 
 **Scope of the assessment**: the penetration tester should work with the client to define a scope that is achievable and will also provide the greatest amount of insight into the security of a network. Typically, the following information is gathered:
 
-* Location of the penetration test;
-* Total coverage area of the premises;
-* Approximate number of access points and wireless clients deployed;
+* Location of the penetration test
+* Total coverage area of the premises
+* Approximate number of access points and wireless clients deployed
 * Which wireless networks are included in the assessment?
 * Is exploitation in scope?
 * Are attacks against users in scope?
@@ -73,8 +73,8 @@ On this stage, we need to understand the following:
 In this phase, the aim is to identify and apply characteristics to the wireless devices and wireless networks within the scope.
 
 All the techniques to perform these briefly are:
-* Enumerate visible and hidden wireless networks in the area
-* Enumerate devices in the area, along with those connected to the targeted networks
+* Enumerate visible and hidden wireless networks in the area;
+* Enumerate devices in the area, along with those connected to the targeted networks;
 * Map the range of the networks, where they are reachable from and whether there are places a malicious individual could operate from to perform an attack, for example, a café.
 
 ### Attack Phase
@@ -140,7 +140,7 @@ wash -i wlan0
 </figure>
 
 {:start="3"}
-3. Start capturing traffic for the target network
+3. Start capturing traffic for the target network:
 
 ```bash
 airodump-ng –c 1 –bssid [AP MAC] –w capture wlan0
@@ -152,7 +152,7 @@ airodump-ng –c 1 –bssid [AP MAC] –w capture wlan0
 </figure>
 
 {:start="4"}
-4. De-authenticate / wait for a client to connect to capture a handshake
+4. De-authenticate / wait for a client to connect to capture a handshake:
 
 ```bash
 aireplay-ng -0 1 -a [AP MAC] -v [CLIENT MAC] wlan0
@@ -165,7 +165,7 @@ aireplay-ng -0 1 -a [AP MAC] -v [CLIENT MAC] wlan0
 </figure>
 
 {:start="5"}
-5. Crack the handshake
+5. Crack the handshake:
 
 If we succeed with de-authenticating a client, it will attempt to reconnect, which should enable us to capture the handshake (aireplay-ng would notify us of handshake capture by outputting "WPA handshake: [AP MAC]"). The following command was used to bruteforce the network’s password with a dictionary:
 
@@ -196,11 +196,11 @@ checked separately, which means that there are 11,000 options.
 **Attack steps:**
 (skipping 1&2 as they have been demonstrated previously)
 
-1. Put wireless card in monitor mode
+1. Put wireless card in monitor mode;
 
-2. Identify a target with WPS enabled
+2. Identify a target with WPS enabled;
 
-3. Attempt to bruteforce WPS PIN (**Reaver**)
+3. Attempt to bruteforce WPS PIN (**Reaver**):
 
 ```bash
 reaver -i <interface> -b <mac> -vv
@@ -236,11 +236,11 @@ reaver -i <interface> -b <mac> -vv <PIN>
 **Attack steps:**
 (skipping 1&2 as they have been demonstrated previously)
 
-1. Put wireless card in monitor mode
+1. Put wireless card in monitor mode;
 
-2. Identify a target with PMKID caching enabled
+2. Identify a target with PMKID caching enabled;
 
-3. Attempt to dump PMKID (**hcxdumptool**)
+3. Attempt to dump PMKID (**hcxdumptool**):
 
 ```bash
 hcxdumptool –o <filename> <interface> --enable_status=1 –filterlist_ap=<file with target MAC> --filtermode=2
@@ -251,7 +251,7 @@ hcxdumptool –o <filename> <interface> --enable_status=1 –filterlist_ap=<file
 </figure>
 
 {:start="4"}
-4. Crack PMKID (**hcxpcaptool**, **Hashcat**)
+4. Crack PMKID (**hcxpcaptool**, **Hashcat**):
 
 ```bash
 hcxdumptool –o <filename> <interface> --enable_status=1 –filterlist_ap=<file with target MAC> --filtermode=2
@@ -272,18 +272,18 @@ hashcat -m 16800 --force <hashfile> <wordlist> –show
 
 In this research, the following attacks against the aforementioned protocol are reviewed:
 
-* Evil Twin (Stealing Credentials)
-* Online Bruteforce
+* Evil Twin (Stealing Credentials);
+* Online Bruteforce.
 
 **WPA2-Enterprise: Authentication:**
 
 WPA-Enterprise, also referred to as WPA-EAP or WPA-802.1X, uses EAP to delegate the authentication to a RADIUS server. **Extensible Authentication Protocol** provides a standardized set of functions and rules to specific authentication protocol implementations known as EAP methods (can be **certificate-based** and **credential-based**):
 
-* EAP-TLS - the original IETF open standard EAP authentication protocol, widely supported, only allows certificate-based authentication
-* PEAP - encapsulates EAP within a TLS tunnel (rather an encapsulation than a method), developed by Microsoft, Cisco and RSA Security)
-* EAP-TTLS - TLS extension to provide EAP over a TLS tunnel, widely supported (except by Microsoft)
-* LEAP - developed by Cisco prior to the standard, no native Microsoft support, deprecated
-* EAP-FAST - Cisco replacement for LEAP
+* EAP-TLS - the original IETF open standard EAP authentication protocol, widely supported, only allows certificate-based authentication;
+* PEAP - encapsulates EAP within a TLS tunnel (rather an encapsulation than a method), developed by Microsoft, Cisco and RSA Security);
+* EAP-TTLS - TLS extension to provide EAP over a TLS tunnel, widely supported (except by Microsoft);
+* LEAP - developed by Cisco prior to the standard, no native Microsoft support, deprecated;
+* EAP-FAST - Cisco replacement for LEAP.
 
 The most commonly used EAP implementations are EAP-PEAP and EAP-TTLS. Since they’re very similar to one another from a technical standpoint, we’ll be focusing primarily on EAP-PEAP. PEAP uses server-side certificates for validation of the RADIUS server. Almost all attacks on PEAP leverage misconfigurations in certificate validation.
 
@@ -302,15 +302,15 @@ The attack consists of creating a rogue access point mimicking the targeted ESSI
 </figure>
 
 **Will not work** against clients configured to:
-- use a certificate-based authentication (s.a. EAP-TLS or PEAP with EAP-TLS), since there is no credentials to steal
-- validate the server certificate during phase 1 authentication, which prevents phase 2 authentication to happen
+- use a certificate-based authentication (s.a. EAP-TLS or PEAP with EAP-TLS), since there is no credentials to steal;
+- validate the server certificate during phase 1 authentication, which prevents phase 2 authentication to happen.
 
 **Attack steps:**
 (skipping 1&2 as they have been demonstrated previously)
 
-1. Put wireless card in monitor mode
-2. Identify a target
-3. Create an Evil Twin (**eaphammer**)
+1. Put wireless card in monitor mode;
+2. Identify a target;
+3. Create an Evil Twin (**eaphammer**):
 
 ```bash
 ./eaphammer --cert-wizard
@@ -324,7 +324,7 @@ The attack consists of creating a rogue access point mimicking the targeted ESSI
 </figure>
 
 {:start="4"}
-4. Capture RADIUS credentials (challenge / response)
+4. Capture RADIUS credentials (challenge / response):
 
 Provided you can overpower the signal strength of the target access point (or due to DoS), clients will begin to disconnect from the target network and connect to your access point. Unless the affected client devices are configured to reject invalid certificates, the victims of the attack will be presented with a message similar to the one below:
 
@@ -333,7 +333,7 @@ Provided you can overpower the signal strength of the target access point (or du
 </figure>
 
 {:start="5"}
-5. Crack received credentials (**asleap**)
+5. Crack received credentials (**asleap**):
 
 Fortunately, it’s usually possible to find at least one enterprise employee who will blindly accept your certificate. It’s also common to encounter devices that are configured to accept invalid certificates automatically. In either case, you’ll soon see usernames, challenges, and responses shown in your terminal as shown below:
 
@@ -360,10 +360,10 @@ For this attack, we can use a tool called **Airhammer**.
 **Attack steps:**
 (skipping 1,2&3)
 
-1. Put wireless card in monitor mode
-2. Identify a target
-3. Generate lists with usernames / passwords
-4. Discover valid credentials
+1. Put wireless card in monitor mode;
+2. Identify a target;
+3. Generate lists with usernames / passwords;
+4. Discover valid credentials:
 
 ```bash
 ./air-hammer.py -i wlan0 -e <ESSID> -u <username / list> -P <password /list> -1
@@ -385,7 +385,7 @@ WPA3 is much harder to attack because of its modern key establishment protocol c
 
 So far, deep technical details regarding discovered WPA3 vulnerabilities are shared strictly with the developer (Wi-Fi Alliance) and vendors. As consequence, professional tools for WPA3 assessment have not yet been developed; only PoC scripts provided by the researchers exist (can be found on Mathy Vanhoef’s page: https://wpa3.mathyvanhoef.com).
 
-### WPA3 Transition Downgrade Attack
+### WPA3-Transition Downgrade Attack
 
 Though it appears to be difficult finding detailed materials covering WPA3 attacks online, in scope of this research I was able to find a detailed article featuring the Downgrade attack on a router with enabled **WPA3-Transition** (backwards compatibility) feature.
 
@@ -393,7 +393,7 @@ The attack is based on **Evil Twin** technique. If a client is connected to a wi
 
 **Attack demonstration:**
 
-1. Configure a Wireless Access Point to use WPA3-Personal with WPA3-Transition feature (backwards compatibility)
+1. Configure a Wireless Access Point to use WPA3-Personal with WPA3-Transition feature (backwards compatibility):
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-downgrade-confirm.png" alt="">
@@ -401,14 +401,14 @@ The attack is based on **Evil Twin** technique. If a client is connected to a wi
 </figure>
 
 {:start="2"}
-2. Wait for a client to connect
+2. Wait for a client to connect:
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-client-connected.png" alt="">
 </figure>
 
 {:start="3"}
-3. Start a rogue AP with hostapd with the following configuration file
+3. Start a rogue AP with hostapd with the following configuration file:
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-rogue-ap.png" alt="">
@@ -416,14 +416,14 @@ The attack is based on **Evil Twin** technique. If a client is connected to a wi
 </figure>
 
 {:start="4"}
-4. De-authenticate a client and capture WPA2-handshake
+4. De-authenticate a client and capture WPA2-handshake:
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-handshake.png" alt="">
 </figure>
 
 {:start="5"}
-5. Crack the handshake
+5. Crack the handshake:
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/wifi-penetration-testing/wpa3-cracked.png" alt="">
@@ -435,7 +435,7 @@ The attack is based on **Evil Twin** technique. If a client is connected to a wi
 For wireless attacks reviewed in this research, the following mitigation recommendations are available:
 
 
-1. Use the latest version of Wi-Fi Protected Access security protocol (**WPA3**);
+1. Use WPA3 as your Wi-Fi network security protocol, avoiding mixed (WPA3+WPA2) modes / WPA3-Transition feature;
 
 2. Regularly **update firmware** on routers/APs and network clients;
 
