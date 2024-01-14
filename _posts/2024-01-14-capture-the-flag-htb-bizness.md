@@ -8,8 +8,8 @@ tags:
   - linux
   - difficulty-easy
   - apache-ofbiz
-categories:
-  - ctf-walkthrough
+category:
+  - ctf
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
