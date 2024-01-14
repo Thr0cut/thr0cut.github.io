@@ -9,7 +9,7 @@ tags:
   - difficulty-easy
   - apache-ofbiz
 categories:
-  - ctf
+  - ctf-walkthrough
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
