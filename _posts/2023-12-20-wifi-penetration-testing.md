@@ -7,7 +7,7 @@ header:
 author_profile: true
 share: false
 tags:
-  - wireless_networks
+  - wireless networks
   - wifi
 categories:
   - research
