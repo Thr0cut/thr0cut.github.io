@@ -145,10 +145,10 @@ According to the source code, the password string get converted to a hexadecimal
   <figcaption></figcaption>
 </figure>
 
-Now, it has become possible to use Hashcat to crack the final hash value that was obtained. Supply it to Hashcat in the format <hash>:<salt> with the following flags:
+Now, it has become possible to use Hashcat to crack the final hash value that was obtained. Supply it to Hashcat in the format \<hash\>:\<salt\> with the following flags:
 
 ```bash
-hashcat -a 0 -m 120 \<hash\>:\<salt\> /path/to/wordlist
+hashcat -a 0 -m 120 <hash>:<salt> /path/to/wordlist
 #-a 0 => Dictionary attack mode
 #-m 120 => SHA1 hash type
 ```
