@@ -1,5 +1,6 @@
 ---
 title: "CTF Walkthrough: Bizness (HtB, Linux, Easy)"
+excerpt: "A detailed walkthrough of "Bizness" machine on HackTheBox."
 ---
 
 ## Description
