@@ -3,13 +3,6 @@ title: "CTF Walkthrough: Bizness (HtB, Linux, Easy)"
 excerpt: "A detailed walkthrough of "Bizness" machine on HackTheBox."
 author_profile: true
 share: false
-tags:
-  - hack-the-box
-  - linux
-  - difficulty-easy
-  - apache-ofbiz
-category:
-  - ctf
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
