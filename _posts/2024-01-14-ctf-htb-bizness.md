@@ -44,7 +44,7 @@ Our ports of interest are 80 (http) and 443 (https) open. Port 8888 with SimpleH
 
 If one scrolls the page down to the very end, they will find that the website is powered by **Apache OfBiz**. This will be our research vector that will prepare us for the Weaponization phase. Other Reconnaissance techniques such as subdomain enumeration, path traversal, directory bruteforcing and others led to no result.
 
-###CVE-2023-49070
+### CVE-2023-49070
 
 Searching for existing vulnerabilities, the eye-catching was a recent one listed under **CVE-2023-49070**. It describes an authentication bypass possible due to flawed logic in handling password change parameters in XML-RPC code. Attacks can leverage this technique to achieve Remote Code Execution on the target through Insecure Object Deserialization vulnerabilities discovered previously in Apache/Java backends.
 
