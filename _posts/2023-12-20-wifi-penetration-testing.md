@@ -2,8 +2,8 @@
 title: "Wi-Fi Penetration Testing: WPA2/3 Attack Methodology"
 excerpt: "A comprehensive secondary research dedicated to Wi-Fi security assessment."
 header:
-  teaser: /assets/images/wifi-penetration-testing-teaser.png
-  og_image: /assets/images/wifi-penetration-testing-teaser.png
+  teaser: /docs/assets/images/teasers/research/wifi-penetration-testing-teaser.png
+  og_image: /docs/assets/images/teasers/research/wifi-penetration-testing-teaser.png
 author_profile: true
 share: false
 tags:
