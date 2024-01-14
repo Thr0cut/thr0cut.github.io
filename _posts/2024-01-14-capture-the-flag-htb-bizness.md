@@ -1,6 +1,20 @@
 ---
 title: "CTF Walkthrough: Bizness (HtB, Linux, Easy)"
-excerpt: "A detailed walkthrough of "Bizness" machine on HackTheBox."
+header:
+  teaser: /docs/assets/images/teasers/ctf/bizness.png
+  og_image: /docs/assets/images/teasers/ctf/bizness.png
+author_profile: true
+share: false
+tags:
+  - hack-the-box
+  - linux
+  - difficulty-easy
+  - apache-ofbiz
+categories:
+  - ctf
+toc: true
+toc_sticky: true
+toc_label: "Table of Contents"
 ---
 
 ## Description
