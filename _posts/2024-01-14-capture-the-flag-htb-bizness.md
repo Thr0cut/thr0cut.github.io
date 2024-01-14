@@ -1,5 +1,6 @@
 ---
 title: "CTF Walkthrough: Bizness (HtB, Linux, Easy)"
+excerpt: "A comprehensive secondary research dedicated to Wi-Fi security assessment."
 header:
   teaser: /docs/assets/images/teasers/ctf/bizness.png
   og_image: /docs/assets/images/teasers/ctf/bizness.png
