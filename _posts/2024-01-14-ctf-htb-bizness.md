@@ -7,10 +7,10 @@ header:
 author_profile: true
 share: false
 tags:
-  - hack-the-box
+  - hack the box
   - linux
   - difficulty-easy
-  - apache-ofbiz
+  - apache ofbiz
 categories:
   - ctf
 toc: true
