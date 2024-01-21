@@ -58,7 +58,7 @@ For those interested in developing a deeper understanding, you are welcome to vi
 
 ## Weaponization
 
-Explore GitHub for available exploits that could help us achieve foothold on the system. The are several repositories available for the CVE of interest, the exploit that has worked for the author can be downloaded from [here](https://github.com/abdoghazy2015/ofbiz-CVE-2023-49070-RCE-POC/blob/main/exploit.py)
+Explore GitHub for available exploits that could help us achieve foothold on the system. The are several repositories available for the CVE of interest, the exploit that has worked for the author can be downloaded from [here](https://github.com/abdoghazy2015/ofbiz-CVE-2023-49070-RCE-POC/blob/main/exploit.py).
 
 In order to use the exploit, one has to take some time to adapt it and make it work. Firstly, it requires the use of **ysoserial**, which is a proof-of-concept tool for generating payloads that exploit unsafe Java object deserialization. You can find the tool (filename: "ysoserial-all.jar") [here](https://github.com/frohoff/ysoserial/releases/download/v0.0.6/ysoserial-all.jar). Place it in the <ins>same directory</ins> as the exploit downloaded previously.
 
