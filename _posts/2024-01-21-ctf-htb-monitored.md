@@ -56,7 +56,7 @@ nmap -sU -sC -sV -T4 <IP> #-sU - UDP Scan; -sC - run default scripts, -sV - enum
   <figcaption></figcaption>
 </figure>
 
-Navigate to https://monitored.htb. You will be presented with the following login page:
+Navigate to *https://monitored.htb*. You will be presented with the following login page:
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/monitored/nagiosinitialpage.png" alt="">
