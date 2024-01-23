@@ -5,6 +5,7 @@ header:
   teaser: /docs/assets/images/teasers/ctf/monitored.png
   og_image: /docs/assets/images/teasers/ctf/monitored.png
 author_profile: false
+classes: wide
 share: true
 tags:
   - hack the box
