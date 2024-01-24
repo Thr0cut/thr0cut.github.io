@@ -94,7 +94,7 @@ defaults:
       related: true
       show_date: true
       sidebar:
-        title: "Quick Navigation Menu"
+        title: "Quick Navigation"
         nav: "contents"
   # _pages
   - scope:
