@@ -4,7 +4,7 @@ excerpt: "A comprehensive secondary research dedicated to Wi-Fi security assessm
 header:
   teaser: /docs/assets/images/teasers/research/wifi-penetration-testing-teaser.png
   og_image: /docs/assets/images/teasers/research/wifi-penetration-testing-teaser.png
-author_profile: true
+author_profile: false
 share: false
 tags:
   - Wireless networks

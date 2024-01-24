@@ -4,7 +4,7 @@ excerpt: "A detailed walkthrough of \"Bizness\" machine on HackTheBox."
 header:
   teaser: /docs/assets/images/teasers/ctf/bizness.png
   og_image: /docs/assets/images/teasers/ctf/bizness.png
-author_profile: true
+author_profile: false
 share: false
 tags:
   - HackTheBox

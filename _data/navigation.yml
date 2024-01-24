@@ -7,3 +7,14 @@ main:
     url: /tags/
   - title: "About"
     url: /about/
+contents:
+  - title: CTF
+    children:
+      - title: "Bizness (HtB, Linux, Easy)"
+        url: /ctf/ctf-htb-bizness/
+      - title: "Monitored (HtB, Linux, Medium)"
+        url: /ctf/ctf-htb-monitored/
+  - title: Research
+    children:
+      - title: "Wi-Fi Penetration Testing: WPA2/3 Attack Methodology"
+        url: /research/wifi-penetration-testing/
