@@ -1,11 +1,11 @@
 ---
 title: "CTF: Bizness (HtB, Linux, Easy)"
 excerpt: "A detailed walkthrough of \"Bizness\" machine on HackTheBox."
+tagline: ""
 header:
   teaser: /docs/assets/images/teasers/ctf/bizness.png
   og_image: /docs/assets/images/teasers/ctf/bizness.png
   overlay_image: /docs/assets/images/teasers/ctf/bizness3.png
-  overlay_filter: 0.8
 author_profile: false
 share: false
 tags:
