@@ -4,6 +4,7 @@ excerpt: "A detailed walkthrough of \"Monitored\" machine on HackTheBox."
 header:
   teaser: /docs/assets/images/teasers/ctf/monitored.png
   og_image: /docs/assets/images/teasers/ctf/monitored.png
+  overlay_image: /docs/assets/images/teasers/ctf/monitored2.png
 author_profile: false
 share: true
 tags:
