@@ -5,6 +5,7 @@ header:
   teaser: /docs/assets/images/teasers/ctf/bizness.png
   og_image: /docs/assets/images/teasers/ctf/bizness.png
   overlay_image: /docs/assets/images/teasers/ctf/bizness2.png
+  overlay_filter: 0.5
 author_profile: false
 share: false
 tags:
