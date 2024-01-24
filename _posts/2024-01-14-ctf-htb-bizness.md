@@ -1,5 +1,5 @@
 ---
-title: "CTF Walkthrough: Bizness (HtB, Linux, Easy)"
+title: "CTF: Bizness (HtB, Linux, Easy)"
 excerpt: "A detailed walkthrough of \"Bizness\" machine on HackTheBox."
 header:
   teaser: /docs/assets/images/teasers/ctf/bizness.png
