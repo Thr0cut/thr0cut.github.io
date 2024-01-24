@@ -1,19 +1,19 @@
 ---
 title: "CTF Walkthrough: Monitored (HtB, Linux, Medium)"
-excerpt: "A detailed walkthrough of \"Monitored\" machine on HackTheBox."
+excerpt: "A detailed walkthrough of \"Analysis\" machine on HackTheBox."
 header:
-  teaser: /docs/assets/images/teasers/ctf/monitored.png
-  og_image: /docs/assets/images/teasers/ctf/monitored.png
+  teaser: /docs/assets/images/teasers/ctf/analysis.png
+  og_image: /docs/assets/images/teasers/ctf/analysis.png
 author_profile: true
 share: true
 tags:
-  - HackTheBox
-  - Linux
-  - Difficulty-Medium
-  - Nagios XI
-  - SQLi
+  - hack the box
+  - windows
+  - difficulty-hard
+  - ldap injection
+  - dll injection
 categories:
-  - CTF
+  - ctf
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"

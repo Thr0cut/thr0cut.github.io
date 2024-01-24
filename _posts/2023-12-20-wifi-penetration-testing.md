@@ -7,10 +7,10 @@ header:
 author_profile: true
 share: false
 tags:
-  - wireless networks
-  - wifi
+  - Wireless networks
+  - Wi-Fi
 categories:
-  - research
+  - Research
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"

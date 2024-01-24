@@ -7,12 +7,12 @@ header:
 author_profile: true
 share: false
 tags:
-  - hack the box
-  - linux
-  - difficulty-easy
-  - apache ofbiz
+  - HackTheBox
+  - Linux
+  - Difficulty-Easy
+  - Apache OfBiz
 categories:
-  - ctf
+  - CTF
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
