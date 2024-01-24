@@ -319,7 +319,7 @@ body {
 }
 
 .page__meta-sep::before {
-  content: "";
+  content: "\s";
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
