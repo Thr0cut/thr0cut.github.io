@@ -1,6 +1,7 @@
 ---
 title: "CTF: Monitored (HtB, Linux, Medium)"
 excerpt: "A detailed walkthrough of \"Monitored\" machine on HackTheBox."
+tagline: ""
 header:
   teaser: /docs/assets/images/teasers/ctf/monitored.png
   og_image: /docs/assets/images/teasers/ctf/monitored.png
