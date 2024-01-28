@@ -115,7 +115,7 @@ The tool discovered several locations of interest:
 
 > /dashboard/upload.php\
   /users/list.php\
-  /employess/login.php\
+  /employess/login.php
 
 ## Exploitation / Foothold
 
@@ -185,7 +185,7 @@ This payload will issue a LDAP query to select information about **technician** 
 
 One of the attributes we could inject input into is **givenName**. Setting *givenName=technician* will cause the app to return "technician" in response, meaning our query was correct and, in fact, the user's givenName attribute is equal to "technician" in the database. We can further modify the request to *givenName=tech* - in this case, the app will also return "technician" in the response. Our requst would be interpreted in the following way by the backend: "select the value of givenName attribute that starts with "tech" and ends with whatever". Supplying an incorrect symbol before the "*" sign <ins>would not</ins> return "technician" in the response. This way, it becomes possible to enumerate the values of user object attributes.
 
-Now let's assume common insecure configuration practices performed by system administators while creating Active Directory users. One of those insecure practices would be specificying **user password in the description**.
+Now let's assume common insecure configuration practices performed by system administators while creating Active Directory users. One of those insecure practices would be specifying **user password in the description**.
 
 Now let's construct a payload that would enumerate **description** attribute of the user object:
 
@@ -193,7 +193,7 @@ Now let's construct a payload that would enumerate **description** attribute of 
 
 In **Burp Suite Intruder** module, select "Brute forcer" as the payload type and add the following characters as the character set:
 
-> !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+> !"#$%&'()*+,-.//0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/analysis/intruderfinal.png" alt="">
@@ -267,7 +267,7 @@ run
 You can easily upload the generated Meterpreter payload using the same file upload functionality on the website. Once uploaded, move it to a safer directory via established PHP reverse shell (in case there's some cleanup script running on the background that could delete our files from the current directory).
 
 ```bash
-move backdoor.exe C:\windows\temp
+move backdoor.exe C:/\windows/\temp
 ```
 Meterpreter listener should receive a callback:
 
@@ -279,7 +279,7 @@ Meterpreter listener should receive a callback:
 Upload **winPEASx64.exe** (Windows privilege escalation assistant tool available [here](https://github.com/carlospolop/PEASS-ng/releases/tag/20240124-4b54e914)) to the Target machine using Meterpreter:
 
 ```bash
-upload <file directory>/winPEASx64.exe c:\\windows\\temp
+upload <file directory>/winPEASx64.exe c:/\windows/\temp
 ```
 Navigate to the specified directory and run **WinPEAS**. The tool will leak **AutoLogon** credentials for user **jdoe**:
 
@@ -349,7 +349,7 @@ msfvenom -p windows/x64/exec cmd='net group "Admins du domaine" jdoe /add /domai
 This command will add **jdoe** to Domain Admins group, providing us with the highest privilege level on the system. Upload the generated .dll file to the target folder:
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/analysis/tcapidll.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/analysis/uploaddll.png" alt="">
   <figcaption></figcaption>
 </figure>
 
@@ -379,11 +379,10 @@ Navigate to *C:\users\Administrateur\Desktop* to get the root flag:
   <figcaption></figcaption>
 </figure>
 
+**Thank you for your attention and happy hacking!**
+{: .notice--primary}
+
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/hackerman.png" alt="">
   <figcaption></figcaption>
 </figure>
-
-
-**Thank you for your attention and happy hacking!**
-{: .notice--primary}
