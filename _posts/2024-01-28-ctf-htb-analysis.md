@@ -267,7 +267,7 @@ run
 You can easily upload the generated Meterpreter payload using the same file upload functionality on the website. Once uploaded, move it to a safer directory via established PHP reverse shell (in case there's some cleanup script running on the background that could delete our files from the current directory).
 
 ```bash
-move backdoor.exe C:\`windows\`temp
+move backdoor.exe C:`\`windows`\`temp
 ```
 Meterpreter listener should receive a callback:
 
@@ -279,7 +279,7 @@ Meterpreter listener should receive a callback:
 Upload **winPEASx64.exe** (Windows privilege escalation assistant tool available [here](https://github.com/carlospolop/PEASS-ng/releases/tag/20240124-4b54e914)) to the Target machine using Meterpreter:
 
 ```bash
-upload <file directory>/winPEASx64.exe c:\`windows\`temp
+upload <file directory>/winPEASx64.exe c:`\`windows`\`temp
 ```
 Navigate to the specified directory and run **WinPEAS**. The tool will leak **AutoLogon** credentials for user **jdoe**:
 
