@@ -6,7 +6,7 @@ header:
   teaser: /docs/assets/images/teasers/ctf/analysis.png
   og_image: /docs/assets/images/teasers/ctf/analysis.png
   overlay_image: /docs/assets/images/teasers/ctf/analysis2.png
-author_profile: true
+author_profile: false
 share: true
 tags:
   - HackTheBox
