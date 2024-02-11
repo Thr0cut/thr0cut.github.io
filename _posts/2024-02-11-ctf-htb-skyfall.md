@@ -248,7 +248,7 @@ List the contents of */home/askyy/user.txt* to get the user flag:
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/skyfall/userflag.png" alt="">
-  <figcaption>Foothold established.</figcaption>
+  <figcaption></figcaption>
 </figure>
 
 
@@ -308,8 +308,3 @@ Regardless of exhausting documentation analysis and the need to install required
 
 **Thank you for your attention and happy hacking!**
 {: .notice--primary}
-
-<figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/hackerman.png" alt="">
-  <figcaption></figcaption>
-</figure>

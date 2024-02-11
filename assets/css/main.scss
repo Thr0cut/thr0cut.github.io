@@ -4,6 +4,15 @@ search: false
 ---
 
 @charset "utf-8";
-
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+
+.highlight {
+  margin: 0;
+  padding: 0.2em;
+  font-family: $monospace;
+  // font-size: $type-size-5b;
+  font-size: 0.9em;
+  line-height: 1.5;
+}

@@ -382,8 +382,3 @@ Navigate to *C:\users\Administrateur\Desktop* to get the root flag:
 
 **Thank you for your attention and happy hacking!**
 {: .notice--primary}
-
-<figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/hackerman.png" alt="">
-  <figcaption></figcaption>
-</figure>
