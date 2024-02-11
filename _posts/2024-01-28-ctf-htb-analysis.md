@@ -7,7 +7,7 @@ header:
   og_image: /docs/assets/images/teasers/ctf/analysis.png
   overlay_image: /docs/assets/images/teasers/ctf/analysis2.png
 author_profile: false
-share: true
+share: false
 tags:
   - HackTheBox
   - Windows
