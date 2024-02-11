@@ -1,6 +1,5 @@
-“jekyll”, “=3.9.3”
-ource "https://rubygems.org"
-gem "github-pages", group: :jekyll_plugins
+source "https://rubygems.org"
+gem "github-actions", group: :jekyll_plugins
 
 
 gem "tzinfo-data"
