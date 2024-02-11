@@ -1,7 +1,7 @@
 ---
 title: "CTF: Analysis (HtB, Windows, Hard)"
 excerpt: "A detailed walkthrough of \"Analysis\" machine on HackTheBox."
-tagline: ""
+tagline: "Snort it out!"
 header:
   teaser: /docs/assets/images/teasers/ctf/analysis.png
   og_image: /docs/assets/images/teasers/ctf/analysis.png
