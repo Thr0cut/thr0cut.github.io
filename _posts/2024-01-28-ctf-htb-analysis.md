@@ -24,8 +24,7 @@ toc_label: "Table of Contents"
 
 ## Description
 
-This is a detailed walkthrough of "Analysis" machine on HackTheBox platform that is based on Windows operating system and categorized as "Hard"
-by difficulty. The machine has Windows Server and Active Directory services deployed on it. In order to establish a foothold on the system, it is necessary to exploit an insecurely configured web application through LDAP Injection. Privilege escalation involves performing DLL Injection on a program running with system privileges.
+This is a detailed walkthrough of "Analysis" machine on HackTheBox platform that is based on Windows operating system and categorized as "Hard" by difficulty. The machine has Windows Server and Active Directory services deployed on it. In order to establish a foothold on the system, it is necessary to exploit an insecurely configured web application through LDAP Injection. Privilege escalation involves performing DLL Injection on a program running with system privileges.
 
 ## Reconnaissance
 

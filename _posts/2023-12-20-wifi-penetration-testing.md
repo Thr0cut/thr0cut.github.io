@@ -463,7 +463,7 @@ Wi-Fi networks are a dangerous attack surface that can provide an adversary with
 
 **Articles:**
 
-* Wi-Fi Pentesting Guide - [(https://github.com/ricardojoserf/wifi-pentesting-guide](https://github.com/ricardojoserf/wifi-pentesting-guide)
+* Wi-Fi Pentesting Guide - [https://github.com/ricardojoserf/wifi-pentesting-guide](https://github.com/ricardojoserf/wifi-pentesting-guide)
 * Pentesting Wi-Fi (Hacktricks) - [https://book.hacktricks.xyz/generic-methodologies-and-resources/pentesting-wifi](https://book.hacktricks.xyz/generic-methodologies-and-resources/pentesting-wifi)
 * Wireless Penetration Testing: PMKID Attack -  [https://www.hackingarticles.in/wireless-penetration-testing-pmkid-attack/](https://www.hackingarticles.in/wireless-penetration-testing-pmkid-attack/)
 * DRAGONBLOOD - Analysing WPA3's Dragonfly Handshake (Mathy Vanhoef) - [https://wpa3.mathyvanhoef.com/#intro](https://wpa3.mathyvanhoef.com/#intro)

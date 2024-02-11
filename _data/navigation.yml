@@ -14,6 +14,8 @@ contents:
         url: /ctf/ctf-htb-bizness/
       - title: "Monitored (HtB, Linux, Medium)"
         url: /ctf/ctf-htb-monitored/
+      - title: "Skyfall (HtB, Linux, Insane)"
+        url: /ctf/ctf-htb-skyfall/
       - title: "Analysis (HtB, Windows, Hard)"
         url: /ctf/ctf-htb-analysis/
   - title: Research
