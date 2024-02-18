@@ -16,7 +16,7 @@ contents:
         url: /ctf/ctf-htb-monitored/
       - title: "Skyfall (HTB, Linux, Insane)"
         url: /ctf/ctf-htb-skyfall/
-      - title: "Analysis (HTB, Windows, Easy)"
+      - title: "Crafty (HTB, Windows, Easy)"
         url: /ctf/ctf-htb-crafty/
       - title: "Analysis (HTB, Windows, Hard)"
         url: /ctf/ctf-htb-analysis/
