@@ -146,7 +146,7 @@ Let's view the contents of the file with **jd-gui**. Install it on your machine 
   <figcaption></figcaption>
 </figure>
 
-It's time to use the discovered passsword. For this purpose, we will utilize [RunasCs](https://github.com/antonioCoco/RunasCs) - a utility to run specific processes with different permissions than the user's current logon provides using explicit credentials.
+It's time to use the discovered password. For this purpose, we will utilize [RunasCs](https://github.com/antonioCoco/RunasCs) - a utility to run specific processes with different permissions than the user's current logon provides using explicit credentials.
 
 Download the tool. Start a HTTP server and transfer the tool to the Target machine:
 
@@ -173,7 +173,7 @@ Start a Netcat listner on the Attacker machine. Back on the Target machine, run 
   <figcaption></figcaption>
 </figure>
 
-This will send a reverse shell as **administator** user to the Attacker. Claim the root flag in the  C:\\Users\\Administrator\\Desktop folder.
+This will send a reverse shell as **administator** user to the Attacker. Claim the root flag in the  *C:\\Users\\Administrator\\Desktop* folder.
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/crafty/root.png" alt="">
