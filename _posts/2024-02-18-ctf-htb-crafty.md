@@ -1,7 +1,7 @@
 ---
-title: "CTF: Crafty (HTB, Linux, Insane)"
+title: "CTF: Crafty (HTB, Windows, Easy)"
 excerpt: "A detailed walkthrough of \"Crafty\" machine on HackTheBox."
-tagline: "Destroy a Minecraft server!"
+tagline: "Take over a Minecraft server!"
 header:
   teaser: /docs/assets/images/teasers/ctf/crafty.png
   og_image: /docs/assets/images/teasers/ctf/crafty.png
@@ -63,7 +63,7 @@ Once the above steps have been completed, modify the code of **poc.py** file in 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/crafty/pocpy.png" alt="">
   <figcaption></figcaption>
-</figure
+</figure>
 
 ## Exploitation / Foothold
 
