@@ -1,7 +1,7 @@
 ---
-title: "CTF: crafty (HTB, Linux, Insane)"
-excerpt: "A detailed walkthrough of \"crafty\" machine on HackTheBox."
-tagline: "Breach insecure cloud storage!"
+title: "CTF: Crafty (HTB, Linux, Insane)"
+excerpt: "A detailed walkthrough of \"Crafty\" machine on HackTheBox."
+tagline: "Destroy a Minecraft server!"
 header:
   teaser: /docs/assets/images/teasers/ctf/crafty.png
   og_image: /docs/assets/images/teasers/ctf/crafty.png
