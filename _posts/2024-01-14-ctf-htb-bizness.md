@@ -1,5 +1,5 @@
 ---
-title: "CTF: Bizness (HtB, Linux, Easy)"
+title: "CTF: Bizness (HTB, Linux, Easy)"
 excerpt: "A detailed walkthrough of \"Bizness\" machine on HackTheBox."
 tagline: ""
 header:
@@ -12,7 +12,6 @@ tags:
   - HackTheBox
   - Linux
   - Difficulty-Easy
-  - Apache OfBiz
 categories:
   - CTF
 toc: true

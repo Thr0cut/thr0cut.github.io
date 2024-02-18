@@ -1,5 +1,5 @@
 ---
-title: "CTF: Monitored (HtB, Linux, Medium)"
+title: "CTF: Monitored (HTB, Linux, Medium)"
 excerpt: "A detailed walkthrough of \"Monitored\" machine on HackTheBox."
 tagline: ""
 header:
@@ -12,7 +12,6 @@ tags:
   - HackTheBox
   - Linux
   - Difficulty-Medium
-  - Nagios XI
   - SQLi
 categories:
   - CTF

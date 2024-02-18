@@ -1,5 +1,5 @@
 ---
-title: "CTF: Analysis (HtB, Windows, Hard)"
+title: "CTF: Analysis (HTB, Windows, Hard)"
 excerpt: "A detailed walkthrough of \"Analysis\" machine on HackTheBox."
 tagline: "Snort it out!"
 header:
@@ -14,7 +14,6 @@ tags:
   - Difficulty-Hard
   - LDAP Injection
   - DLL Injection
-  - Snort
 categories:
   - CTF
 toc: true

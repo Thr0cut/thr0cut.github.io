@@ -1,5 +1,5 @@
 ---
-title: "CTF: Skyfall (HtB, Linux, Insane)"
+title: "CTF: Skyfall (HTB, Linux, Insane)"
 excerpt: "A detailed walkthrough of \"Skyfall\" machine on HackTheBox."
 tagline: "Breach insecure cloud storage!"
 header:
@@ -13,8 +13,6 @@ tags:
   - Linux
   - Difficulty-Insane
   - Information Disclosure
-  - MinIO
-  - Hashicorp Vault
   - Cloud
 categories:
   - CTF
@@ -47,7 +45,7 @@ ffuf -H 'Host: FUZZ.skyfall.htb' -w /usr/share/wordlists/amass/subdomains-top1mi
 ```
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/skyfall/fuff.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/skyfall/ffuf.png" alt="">
   <figcaption>"demo" subdomain discovered.</figcaption>
 </figure>
 
