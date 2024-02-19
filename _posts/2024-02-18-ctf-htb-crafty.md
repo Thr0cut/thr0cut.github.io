@@ -56,7 +56,7 @@ It is required to install the following tools to establish foothold:
 
 * The exploit requires **jdk-8u20** and checks if its present in the directory. Downloading the exact version from Oracle website prompts for account creation. I was able to find a slightly different jdk version - [jdk-8u202](https://mirrors.huaweicloud.com/java/jdk/8u202-b08/jdk-8u202-linux-x64.tar.gz) that works with the exploit. Once downloaded and extracted in the same directory as the POC script, rename the jdk directory to **jdk1.8.0_20** in order to bypass the script check.
 
-* Download [PyCraft](https://github.com/ammaraskar/pyCraft): a CLI Minecraft client that allows to connect to the server and send messages to the game chat (best alternative to avoid the disgrace of install an actual Minecraft client on your computer).
+* Download [PyCraft](https://github.com/ammaraskar/pyCraft): a CLI Minecraft client that allows to connect to the server and send messages to the game chat (best alternative to avoid the disgrace of installing an actual Minecraft client on your computer).
 
 Once the above steps have been completed, modify the code of **poc.py** file in the *log4j-shell-poc* directory to execute **"cmd.exe"** (since the server is hosted on Windows) in the payload:
 
