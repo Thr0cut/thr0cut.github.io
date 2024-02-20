@@ -6,6 +6,17 @@ layout: archive
 
 <h2 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Publications" }}</h2>
 
-  {% for post in posts limit:4 %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
+<div class="feature__wrapper">
+   {% for post in site.posts limit:4 %}
+   <div class="feature__item">
+      <div class="archive__item">
+         <div class="archive__item-body">
+            <h3 class="archive__item-title"><a href="{{ site.baseurl }}{{ post.url}}" rel="permalink">{{ post.title }}</a></h3>
+            <div class="archive__item-excerpt">
+               <p>{{ post.excerpt | markdownify }}</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   {% endfor %}
+</div>
