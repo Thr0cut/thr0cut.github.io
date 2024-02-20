@@ -173,7 +173,11 @@ Start a Netcat listner on the Attacker machine. Back on the Target machine, run 
   <figcaption></figcaption>
 </figure>
 
-This will send a reverse shell as **administator** user to the Attacker. Claim the root flag in the  *C:\\Users\\Administrator\\Desktop* folder.
+This will send a reverse shell as **administator** user to the Attacker.
+
+### Root flag
+
+Claim the root flag in the  *C:\\Users\\Administrator\\Desktop* folder.
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/crafty/root.png" alt="">
