@@ -148,7 +148,7 @@ Let's view the contents of the file with **jd-gui**. Install it on your machine 
 
 It's time to use the discovered password. For this purpose, we will utilize [RunasCs](https://github.com/antonioCoco/RunasCs) - a utility to run specific processes with different permissions than the user's current logon provides using explicit credentials.
 
-Download the tool. Start a HTTP server and transfer the tool to the Target machine:
+Download the tool. Start HTTP server and transfer the tool to the Target machine:
 
 ```powershell
 # Attacker:
