@@ -22,7 +22,7 @@ toc_label: "Table of Contents"
 
 ## Description
 
-This is a detailed walkthrough of "Crafty" machine on HackTheBox that is based on Windows operating system and categorized as "Easy" by difficulty. Never in my entire existence had I thought I would fall so low that I'd touch Minecraft in any shape or form, however, the day has come... "Enjoy" a takeover of a Minecraft server that is vulnerable to the infamous **Log4Shell** (CVE-2021-44228)! It should be noted that at the moment of writing, the machine has not been implemented in a quality manner, and even if you follow all the instructions step by step, you may still experience connectivty issues and exploits not functioning properly (it's recommended to spare yourself from pain and simply reset the machine). However, through rigorous testing, yours truly described the smoothest exploitation scenario.
+This is a detailed walkthrough of "Crafty" machine on HackTheBox that is based on Windows operating system and categorized as "Easy" by difficulty. Never in my entire existence had I thought I would fall so low that I'd touch Minecraft in any shape or form, however, the day has come... "Enjoy" a takeover of a Minecraft server that is vulnerable to the infamous **Log4Shell** (CVE-2021-44228)! It should be noted that at the moment of writing, the machine has not been implemented in a quality manner, and even if you follow all the instructions step by step, you may still experience connectivity issues and exploits malfunctioning (it's recommended to spare yourself from pain and simply reset the machine). However, through rigorous testing, yours truly described the smoothest exploitation scenario.
 
 ## Reconnaissance
 
