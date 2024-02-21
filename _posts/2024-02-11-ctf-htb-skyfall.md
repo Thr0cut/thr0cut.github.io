@@ -261,7 +261,7 @@ Check what the user can run as root with **sudo -l**:
   <figcaption></figcaption>
 </figure>
 
-The command *sudo /root/vault/vault-unseal -c /etc/vault-unseal.yaml -d* creates a **debug.log** file in user's home directory. Listing its contents will not work since the file will belong to **root** user, and our current has no permissions to access this file. However, this can be bypassed by creating a **debug.log** file in home directory prior to running the command, which in return would append its output to already existing file. Since the file was originally created by our current user, we can dispaly its contents.
+The command *sudo /root/vault/vault-unseal -c /etc/vault-unseal.yaml -d* creates a **debug.log** file in user's home directory. Listing its contents will not work since the file will belong to **root** user, and our current has no permissions to access this file. However, this can be bypassed by creating a **debug.log** file in home directory prior to running the command, which in return would append its output to already existing file. Since the file was originally created by our current user, we can display its contents.
 
 ```bash
 touch debug.log
