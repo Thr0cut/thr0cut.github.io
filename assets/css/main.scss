@@ -16,18 +16,3 @@ search: false
   font-size: 0.9em;
   line-height: 1.5;
 }
-
-.archive__item-title {
-    position: relative;
-    font-size: 10px;
-}
-
-.grid__item .archive__item-title {
-  font-size: 0.7em;
-}
-
-@media (min-width: 48em) {
-  .grid__item .archive__item-excerpt {
-    display: block;
-    font-size: .5em;
-  }
