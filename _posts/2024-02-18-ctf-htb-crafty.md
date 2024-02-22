@@ -1,5 +1,5 @@
 ---
-title: "CTF: Crafty (HTB, Windows, Easy)"
+title: "CTF: Crafty (Windows, Easy)"
 excerpt: "A detailed walkthrough of \"Crafty\" machine on HackTheBox."
 tagline: "Take over a Minecraft server!"
 header:

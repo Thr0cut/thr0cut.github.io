@@ -1,5 +1,5 @@
 ---
-title: "CTF: Skyfall (HTB, Linux, Insane)"
+title: "CTF: Skyfall (Linux, Insane)"
 excerpt: "A detailed walkthrough of \"Skyfall\" machine on HackTheBox."
 tagline: "Breach insecure cloud storage!"
 header:

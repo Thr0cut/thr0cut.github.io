@@ -1,5 +1,5 @@
 ---
-title: "CTF: Monitored (HTB, Linux, Medium)"
+title: "CTF: Monitored (Linux, Medium)"
 excerpt: "A detailed walkthrough of \"Monitored\" machine on HackTheBox."
 tagline: ""
 header:

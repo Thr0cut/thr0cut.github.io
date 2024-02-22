@@ -10,15 +10,15 @@ main:
 contents:
   - title: CTF
     children:
-      - title: "Bizness (HTB, Linux, Easy)"
+      - title: "Bizness (Linux, Easy)"
         url: /ctf/ctf-htb-bizness/
-      - title: "Monitored (HTB, Linux, Medium)"
+      - title: "Monitored (Linux, Medium)"
         url: /ctf/ctf-htb-monitored/
-      - title: "Skyfall (HTB, Linux, Insane)"
+      - title: "Skyfall (Linux, Insane)"
         url: /ctf/ctf-htb-skyfall/
-      - title: "Crafty (HTB, Windows, Easy)"
+      - title: "Crafty (Windows, Easy)"
         url: /ctf/ctf-htb-crafty/
-      - title: "Analysis (HTB, Windows, Hard)"
+      - title: "Analysis (Windows, Hard)"
         url: /ctf/ctf-htb-analysis/
   - title: Research
     children:

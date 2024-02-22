@@ -1,5 +1,5 @@
 ---
-title: "CTF: Analysis (HTB, Windows, Hard)"
+title: "CTF: Analysis (Windows, Hard)"
 excerpt: "A detailed walkthrough of \"Analysis\" machine on HackTheBox."
 tagline: "Snort it out!"
 header:
