@@ -18,6 +18,8 @@ contents:
         url: /ctf/ctf-htb-skyfall/
       - title: "Crafty (Windows, Easy)"
         url: /ctf/ctf-htb-crafty/
+      - title: "Jab (Windows, Medium)"
+        url: /ctf/ctf-htb-jab/
       - title: "Analysis (Windows, Hard)"
         url: /ctf/ctf-htb-analysis/
   - title: Research
