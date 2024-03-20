@@ -33,7 +33,7 @@ nmap -sV -T4 <IP>
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/jab/nmapscan.png" alt="">
-  <figcaption>Ports 80 HTTP and 25565 Minecraft are open.</figcaption>
+  <figcaption></figcaption>
 </figure>
 
 Nmap scan reveals XMPP service running on port 5269. XMPP is an open communication protocol designed for instant messaging, presence information, and contact list maintenance. Based on XML, it enables the near-real-time exchange of structured data between two or more network entities. You can learn more about it on [https://xmpp.org](https://xmpp.org).
