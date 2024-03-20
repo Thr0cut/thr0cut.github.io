@@ -1,7 +1,7 @@
 ---
 title: "CTF: Jab (Windows, Medium)"
 excerpt: "A detailed walkthrough of \"Jab\" machine on HackTheBox."
-tagline: "Take over a Minecraft server!"
+tagline: "Private chats are not so private."
 header:
   teaser: /docs/assets/images/teasers/ctf/jab.png
   og_image: /docs/assets/images/teasers/ctf/jab.png
