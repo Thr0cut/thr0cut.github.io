@@ -251,7 +251,7 @@ If a tunnel has been established successfully, you can navigate to *127.0.0.1:90
 
 ### CVE-2023-32315
 
-Vulnerability research for Openfire v.4.7.5. leads to **CVE-2023-32315** - Openfire Path Traversal which can be further exploited to gain unauthorized access to Openfire console and Remote Code Execution. Since we already have a set of credentials, we do not need to bypass authentication; we can proceed to the RCE part. For those interested, here's a could [article](https://vulncheck.com/blog/openfire-cve-2023-32315) that explains CVE-2023-32315 exploitation in more detail.
+Vulnerability research for Openfire v.4.7.5. leads to **CVE-2023-32315** - Openfire Path Traversal which can be further exploited to gain unauthorized access to Openfire console and Remote Code Execution. Since we already have a set of credentials, we do not need to bypass authentication; we can proceed to the RCE part. For those interested, here's a great [article](https://vulncheck.com/blog/openfire-cve-2023-32315) that explains CVE-2023-32315 exploitation in more detail.
 
 Download the following [exploit](https://github.com/miko550/CVE-2023-32315) from GitHub.
 
