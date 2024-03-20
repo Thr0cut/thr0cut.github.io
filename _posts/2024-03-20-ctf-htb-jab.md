@@ -125,7 +125,7 @@ john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
 ```
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/jab/asrepresults.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/post_images/jab/hashcrack.png" alt="">
   <figcaption>Got a password for jmontgomery user!</figcaption>
 </figure>
 
