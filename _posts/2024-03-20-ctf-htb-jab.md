@@ -118,7 +118,7 @@ The process will take some time as our user list is quite long, but eventually t
   <figcaption></figcaption>
 </figure>
 
-Now let's attempt to crack them with **JohnTheRipper*:
+Now let's attempt to crack them with *JohnTheRipper*:
 
 ```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
