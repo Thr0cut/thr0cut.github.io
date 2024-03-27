@@ -22,7 +22,11 @@ contents:
         url: /ctf/ctf-htb-jab/
       - title: "Analysis (Windows, Hard)"
         url: /ctf/ctf-htb-analysis/
-  - title: Research
+  - title: Research / Articles
     children:
       - title: "Wi-Fi Penetration Testing: WPA2/3 Attack Methodology"
         url: /research/wifi-penetration-testing/
+  - title: Projects
+    children:
+      - title: "Programming: CTFRecon.py"
+        url: /projects/ctfrecon.py
